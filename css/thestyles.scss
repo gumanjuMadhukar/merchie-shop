@@ -1,0 +1,575 @@
+@import "components/fonts_and_colors";
+
+/*------------------------------------ Site Wide Starts -----------------------------------*/
+
+/*------------------------------------- Site Wide Ends ------------------------------------*/
+
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+#header-wrapper {
+  .custom-container {
+    max-width: 1920px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .header-inner {
+      nav {
+        .container-fluid {
+          .navbar-collapse {
+            flex-grow: 0;
+          }
+          .action {
+            .cart {
+              a {
+                position: relative;
+                span {
+                  right: -10px;
+                  top: -10px;
+                  position: absolute;
+                  border-radius: 50%;
+                  background: #fc1515;
+                  width: 20px;
+                  height: 20px;
+                  text-align: center;
+                  color: #fff;
+                }
+                img {
+                  width: 35px;
+                  height: auto;
+                }
+              }
+            }
+            .login {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*--------------------------------- Header Wrapper Starts ---------------------------------*/
+
+/*-------------------------------- Content Wrapper Starts ---------------------------------*/
+/*--------------------------------- Content Wrapper Ends ----------------------------------*/
+
+/*--------------------------------- Footer Wrapper Starts ---------------------------------*/
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 173px;
+  font-size: 14px;
+
+  .footer-brand {
+    padding-top: 20px;
+    .logo {
+      padding-bottom: 20px;
+      img {
+        width: 60px;
+      }
+    }
+
+    .footer-quotes {
+      width: 70%;
+      color: #fff;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .footer-logo {
+      display: flex;
+      li a {
+        color: #ffffff;
+        .footer-logo1 {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .footer-address {
+    padding-top: 80px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    li a {
+      color: #fff;
+    }
+
+    .footer-title {
+      margin-bottom: 16px;
+      width: 120px;
+      height: 24px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+  .footer-website {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    li a {
+      color: #fff;
+    }
+  }
+  .footer-contact {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+.copyright {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.bottom-footer1,
+.bottom-footer {
+  display: inline-flex;
+  justify-content: baseline;
+  font-size: 14px;
+  margin-bottom: 0;
+  p {
+    font-size: 14px;
+    padding: 0px !important;
+    color: #fff;
+  }
+  a {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+/*---------------------------------- Footer Wrapper Ends ----------------------------------*/
+
+/*----------------------------------- Components Starts -----------------------------------*/
+.common-remove-tab-style {
+  border-bottom: 0;
+  li {
+    a {
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        border: 0;
+      }
+    }
+
+    &.active {
+      a {
+        background-color: transparent;
+        border: 0;
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+.product-card{
+  .product-image{ 
+    height: 295px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 4px;
+    }
+
+  }
+  .product-details{
+    padding: 24px;
+
+    .title{
+      margin: 20px 0 16px;  
+    }
+    .price{
+      font-size:24px;
+      display: flex;
+      justify-content: center;
+      del{
+        color:rgba(0, 0, 0, 0.39) ;
+      }
+      h5{
+        margin-left: 10px;
+        color: #fc0101;
+        font-family: 'Futura-medium';
+      }
+    }
+
+  }
+}
+/*------------------------------------ Components Ends ------------------------------------*/
+
+/*---------------------------------- Slick Slider Starts ----------------------------------*/
+/*---------------------------------- Slick Slider Starts ----------------------------------*/
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+}
+/*----------------------------------- Slick Slider Ends -----------------------------------*/
+/*----------------------------------- Slick Slider Ends -----------------------------------*/
+
+/*------------------------------------- Mcustom Starts ------------------------------------*/
+#home-page {
+  /* banner section */
+  .banner-section {
+    .custom-container {
+      .slider-container {
+        display: flex;
+        .banner {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          height: 75vh;
+          text-transform: capitalize;
+          .section-title {
+            h1 {
+              span {
+                color: #fc0101;
+              }
+            }
+          }
+        }
+        .banner-slider {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          width: 25%;
+          .item {
+            .image {
+              width: 600px;
+              img {
+                width: 100%;
+                margin-left: -15%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .exclusive-collection-section {
+    .custom-container {
+      padding-bottom: 95px;
+      .exclusive-container {
+        display: flex;
+        justify-content: space-between;
+        .collection {
+          position: relative;
+          .image {
+            width: 100%;
+          }
+          .button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10%;
+            .btn-common {
+              background: #000;
+              padding: 15px 45px;
+              color: #dedede;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bsp-section {
+    .bsp-container {
+      display: flex;
+      align-items: center;
+      background: #000;
+
+      .bsp-banner {
+        width: 40%;
+        color: #d0d0d0;
+        .bsp {
+          padding: 100px;
+          padding-left: 150px;
+
+          h3 {
+            padding-right: 60px;
+          }
+          p {
+            padding: 20px 0;
+          }
+        }
+      }
+      .best-sold-products {
+        width: 60%;
+        .product-slider {
+          display: flex;
+          .card {
+            padding: 60px 30px;
+            background: transparent;
+            border: none;
+            .inner {
+              border-radius: 8px;
+              background: #fff;
+              .product-image {
+                img {
+                  width: 100%;
+                  height: 365px;
+                  object-fit: cover;
+                  border-radius: 8px;
+                }
+              }
+              .product-details {
+                padding: 20px;
+                p {
+                  font-size: 21px;
+                  font-weight: 700 !important;
+                  padding: 15px 0;
+                }
+                span {
+                  color: #fc1515;
+                  padding-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-product-section {
+    .custom-container {
+      .product-container {
+        
+          .nav-pills {
+            justify-content: center;
+            > li {
+              padding: 0 45px;
+              > button {
+                font-size: 26px;
+
+                color: #000;
+                &.active {
+                  background-color: transparent;
+                  color: #fc1515;
+                  border-bottom: 5px solid red;
+                }
+              }
+            }
+          }
+
+          .tab-content {
+            color: white;
+            padding: 5px 15px;
+            .tab-pane {
+              color: #000;
+              .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 10px;
+                gap: 86px;
+                .grid-item {
+                  font-size: 30px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+       
+      }
+    }
+  }
+
+  .featured {
+    .custom-container {
+      .featured-artists {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .artist-container {
+          img {
+            width: 100%;
+          }
+          .artist-name {
+            p {
+              padding: 32px;
+              font-size: 25px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  .custom-container {
+    .testimonial-wrapper {
+      .inner {
+        padding: 20px;
+        .card {
+          h4 {
+            text-align: center;
+          }
+          display: flex;
+          flex-direction: column;
+          background-color: #000;
+          border-radius: 10px;
+          padding: 20px;
+          height: 467px;
+          align-items: center;
+          justify-content: space-around;
+          color: #fff;
+          .writer {
+            h5 {
+              padding: 20px 0 5px 0;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+/*-------------------------------------- Mcustom Ends -------------------------------------*/
+
+/*-------------------------------------- Modal Starts -------------------------------------*/
+.modal-dialog {
+  margin: 70px auto;
+
+  .modal-content {
+    background: #fff;
+    border-radius: 8px;
+    .modal-header {
+      border: 0;
+      button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        opacity: 1;
+      }
+    }
+    .modal-body {
+      padding: 0 50px 50px 50px;
+      color: #000;
+      .heading {
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        p {
+          padding: 23px 0 10px 0;
+        }
+        span {
+          a {
+            color: #fc1515;
+            padding-left: 10px;
+          }
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        .input-field {
+          position: relative !important;
+          .form-control {
+            font-size: 21px;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #000;
+          }
+          img {
+            position: absolute;
+            top: 66%;
+            transform: translateY(-50%);
+            right: 10px;
+            width: 25px;
+          }
+        }
+        .form-check {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          font-weight: 700;
+          .form-check-input:checked[type="checkbox"] {
+            background-image: none;
+            background-color: #fc0101;
+            border-color: #fff;
+          }
+        }
+        .btn-common {
+          border-radius: 8x;
+          border: none;
+        }
+      }
+      .alternative-login {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        padding-top: 20px;
+        .logo-items {
+          display: flex;
+          width: 40%;
+          justify-content: space-around;
+        }
+      }
+
+      .modal-loading-gif {
+        height: 130px;
+        position: relative;
+        img {
+          width: 30px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+        }
+      }
+      p,
+      h1,
+      h2,    
+      h3,
+      h4,
+      h5,
+      h6,
+      ul li,
+      ol li,
+      span {
+        color: #000000;
+      }
+    }
+  }
+}
+/*--------------------------------------- Modal Ends --------------------------------------*/

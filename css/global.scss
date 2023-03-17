@@ -1,0 +1,181 @@
+/**
+ * Created by Susan Dangol
+*/
+
+@import "components/fonts_and_colors";
+
+html{
+  height: 100%;
+}
+@font-face {
+  font-family: 'Futura-bold';
+  src: url('../fonts/Futura-Bold.woff2') format('woff2'),
+      url('../fonts/Futura-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura-medium-bold';
+  src: url('../fonts/Futura.woff2') format('woff2'),
+      url('../fonts/Futura.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura-medium';
+  src: url('../fonts/Futura.woff2') format('woff2'),
+      url('../fonts/Futura.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/FuturaCondMedium.woff2') format('woff2'),
+      url('../fonts/FuturaCondMedium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  height: 100%;
+  font-family:'Futura-medium';
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  line-height: inherit;
+
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  &:link,&:visited{
+    text-decoration: none
+  }
+  &:focus{
+    outline: none
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+  font-family: "Futura-bold"; 
+}
+
+h1{
+  font-size: 81px;
+}
+h2 {
+  font-size: 68px;
+}
+h3{
+  font-size: 48px;
+}
+h4{
+  font-size: 30px;
+  font-weight: 700;
+}
+h5{
+  font-size: 24px;
+}
+h6{
+  font-size: 21px;
+}
+
+p{
+  margin-bottom: 20px;
+  font-family: "Futura-medium";
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover, &:focus{
+    text-decoration: none
+  }
+}
+
+#wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+.slick-slider{
+  .slick-slide{
+    outline: none;
+  }
+}
+
+
+.custom-container{
+  padding: 50px 170px;
+  max-width: 1920px;
+  margin: auto;
+  .small-width-container{
+    max-width: 900px;
+  }
+  .small-medium-container{
+    max-width: 1200px;
+  }
+}
+
+
+.btn-common{
+  display: inline-block;
+  width: auto!important;
+  outline: none;
+  padding: 18px 50px;
+  background-color: $red-color;
+ 
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.section-title{
+  padding-bottom: 50px;
+  text-align: center;
+  &.white-text{
+    color: #ffff;
+  }
+  &.move-left{
+    text-align: left;
+  }
+  h1{
+    
+  }
+  &.large-text{
+    h2{
+      font-size: 68px;
+    }
+  }
+}
